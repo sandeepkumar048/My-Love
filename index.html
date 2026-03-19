@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For My Love ❤️</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #ff758c, #ff7eb3);
+            text-align: center;
+            color: white;
+        }
+
+        .container {
+            margin-top: 80px;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        img {
+            width: 250px;
+            border-radius: 20px;
+            margin: 20px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+        }
+
+        button {
+            padding: 12px 25px;
+            font-size: 18px;
+            margin: 15px;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+        }
+
+        .yes {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .no {
+            background-color: #f44336;
+            color: white;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 🎵 Background Music -->
+<audio autoplay loop>
+    <source src="peheli.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container">
+    <!-- 💖 Replace Names Here -->
+    <h1>Rinu Ji❤️</h1>
+
+    <!-- 📸 Replace Image Here -->
+    <img src="Ry.webp" alt="Our Memory">
+    <img src="rr.webp" alt="Our Memory">
+    <img src="RR(1).jpg" alt="Our Memory">
+    <img src="Snapchat-1361530641.jpg" alt="Our Memory">
+
+    <p>
+        From the moment I met you, my life changed beautifully.<br>
+        You are my happiness, my smile, my everything.
+    </p>
+
+    <p>
+        I, <b>[Sandeep]</b>, want to ask you something very special...
+    </p>
+
+    <h2>Will you be mine forever? 💍</h2>
+
+    <button class="yes" onclick="yesClick()">Yes 💕</button>
+    <button class="no" onmouseover="moveButton()">No 😢</button>
+</div>
+
+
+<script>
+    
+    function yesClick() {
+        alert("I love you so much ❤️ You made me the happiest person!!!!!..");
+    }
+
+    function moveButton() {
+        const btn = document.querySelector('.no');
+        btn.style.position = 'absolute';
+        btn.style.top = Math.random() * window.innerHeight + 'px';
+        btn.style.left = Math.random() * window.innerWidth + 'px';
+    }
+</script>
+
+</body>
+</html>
